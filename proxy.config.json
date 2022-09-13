@@ -1,7 +1,0 @@
-{
-  "/api/books/*": {
-    "target": "https://bible-app-demo.herokuapp.com",
-    "secure": false,
-    "changeOrigin": true
-  }
-}
