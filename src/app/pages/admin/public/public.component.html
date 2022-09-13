@@ -1,0 +1,43 @@
+<div class="col-md-8 mx-auto card p-3 shadow p-3 mb-5 bg-body rounded">
+  <div class="card-body">
+    <h1 class="card-title fw-bold text-center">
+      Registro Célula - Fuente de Agua Viva
+    </h1>
+    <p class="text-center text-muted">
+      Fecha de realización: {{ dateRealized | titlecase }}
+    </p>
+    <hr />
+    <form class="mt-5">
+      <div class="mt-3">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <label class="fw-bold">Identificación</label>
+            <mat-form-field appearance="outline">
+              <input matInput type="number" disabled />
+            </mat-form-field>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <label class="fw-bold">Líder</label>
+            <mat-form-field appearance="outline">
+              <input matInput type="number" disabled />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <label class="fw-bold">Asistencias</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Asistencias *" type="number" autofocus />
+        </mat-form-field>
+        <label class="fw-bold">Ofrenda</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Ofrenda *" type="number" />
+        </mat-form-field>
+        <label class="fw-bold">Pastoreos</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Pastoreos *" type="number" />
+        </mat-form-field>
+        <button mat-raised-button color="primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

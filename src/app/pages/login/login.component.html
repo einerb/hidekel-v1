@@ -1,0 +1,39 @@
+<div class="container pt-5">
+  <h1 class="text-center text-muted">INICIAR SESIÓN</h1>
+  <div class="row mt-5">
+    <form>
+      <div class="col-md-6 mx-auto mt-3">
+        <mat-form-field appearance="outline">
+          <mat-label>Cédula <span class="text-danger">*</span></mat-label>
+          <input matInput placeholder="Cédula *" type="number" />
+        </mat-form-field>
+      </div>
+      <div *ngIf="isAdmin">
+        <div class="col-md-6 mx-auto mt-3">
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña <span class="text-danger">*</span></mat-label>
+            <input matInput placeholder="Contraseña *" />
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-md-4 mx-auto mt-2">
+      <button mat-raised-button color="primary" style="width: 100%">
+        Ingresar
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer
+  class="text-center mt-5 p-3"
+  style="position: absolute; bottom: 0; width: 100%;"
+>
+  <i class="fa fa-copyright" aria-hidden="true"></i> {{ year }} Todos los
+  derechos reservados a su autor - Iglesia Cristiana Cuadrangular Hidekel
+  <br />
+  <b>Developed by Dev Team</b>
+</footer>
