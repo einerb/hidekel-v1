@@ -9,6 +9,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { PublicComponent } from './public/public.component';
 import { VerseService } from 'src/app/services';
+import { AssistanceComponent } from './assistance/assistance.component';
+import { ModalManualComponent } from './cell/modal-manual/modal-manual.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { VerseService } from 'src/app/services';
     CellComponent,
     WelcomeComponent,
     PublicComponent,
+    AssistanceComponent,
+    ModalManualComponent,
   ],
   imports: [CommonModule, AdminRoutingModule, ComponentsModule, MatTableModule],
 })

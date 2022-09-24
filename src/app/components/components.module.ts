@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BlockUIModule } from 'ng-block-ui';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +19,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     CommonModule,
     RouterModule,
     MatButtonModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
@@ -32,6 +34,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     HeaderComponent,
     FooterComponent,
     MatButtonModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,

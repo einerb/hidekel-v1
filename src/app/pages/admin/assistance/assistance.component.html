@@ -1,0 +1,36 @@
+<div class="col-md-8 mx-auto card p-3 shadow p-3 mb-5 bg-body rounded">
+  <div class="card-body">
+    <h1 class="card-title fw-bold text-center">
+      Asistencia Congregacional
+    </h1>
+    <p class="text-center text-muted">
+      Fecha de registro: {{ dateRealized | titlecase }}
+    </p>
+    <hr />
+    <form class="mt-5">
+      <div class="mt-3">
+        <label class="fw-bold">Damas</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Damas *" type="number" autofocus />
+        </mat-form-field>
+        <label class="fw-bold">Caballeros</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Caballeros *" type="number" />
+        </mat-form-field>
+        <label class="fw-bold">Jóvenes</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Jóvenes *" type="number" />
+        </mat-form-field>
+        <label class="fw-bold">Niños</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Niños *" type="number" />
+        </mat-form-field>
+        <label class="fw-bold">Visitas</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Visitas *" type="number" />
+        </mat-form-field>
+        <button mat-raised-button color="primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

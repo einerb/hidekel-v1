@@ -14,8 +14,10 @@ import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
 import * as moment from 'moment';
 import { BlockUI, NgBlockUI } from 'ng-block-ui';
+import { MatDialog } from '@angular/material/dialog';
 
 import { DATE_FORMAT } from 'src/app/utils/moment-format.util';
+import { ModalManualComponent } from './modal-manual/modal-manual.component';
 
 export interface PeriodicElement {
   leader: string;
@@ -139,7 +141,7 @@ export class CellComponent implements OnInit {
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     moment.locale('es');
@@ -201,5 +203,11 @@ export class CellComponent implements OnInit {
         this.blockUI.stop();
         docResult.save(`Reporte_Celulas_${new Date().toISOString()}.pdf`);
       });
+  }
+
+  public openDialog() {
+    const dialogRef = this.dialog.open(ModalManualComponent);
+
+    dialogRef.afterClosed().subscribe();
   }
 }
