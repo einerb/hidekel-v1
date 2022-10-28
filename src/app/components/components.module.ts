@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { BlockUIModule } from 'ng-block-ui';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -25,7 +27,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     ReactiveFormsModule,
     FormsModule,
     MatSelectModule,
+    MatAutocompleteModule,
     MatDatepickerModule,
+    MatPaginatorModule,
     BlockUIModule.forRoot({
       message: 'Cargando...',
     }),
@@ -42,6 +46,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatSelectModule,
     MatDatepickerModule,
     BlockUIModule,
+    MatPaginatorModule,
+    MatAutocompleteModule,
   ],
 })
 export class ComponentsModule {}

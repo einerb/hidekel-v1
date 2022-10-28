@@ -2,20 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AdminComponent } from './admin.component';
-import { AssistanceComponent } from './assistance/assistance.component';
-import { CellComponent } from './cell/cell.component';
+import { ReportComponent } from './report/report.component';
 import { PublicComponent } from './public/public.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   {
     path: ``,
     component: AdminComponent,
     children: [
-      { path: ``, component: WelcomeComponent },
-      { path: `cells`, component: CellComponent },
-      { path: `public-cells`, component: PublicComponent },
-      { path: `assistance`, component: AssistanceComponent },
+      { path: ``, component: PublicComponent },
+      { path: `reports`, component: ReportComponent },
     ],
   },
 ];

@@ -11,3 +11,10 @@ body {
 .mat-form-field {
   width: 100%;
 }
+.required-label {
+  color: red !important;
+}
+
+textarea {
+  resize: none !important;
+}

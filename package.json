@@ -1,6 +1,7 @@
 {
-  "name": "hidekel-v1",
-  "version": "0.0.0",
+  "name": "proflo-v1",
+  "version": "0.0.1",
+  "author": "Einer Bravo",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
